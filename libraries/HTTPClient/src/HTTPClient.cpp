@@ -41,6 +41,7 @@
 
 /// Cookie jar support
 #include <time.h>
+#include <lvgl.h> //CBJ
 
 #ifdef HTTPCLIENT_1_1_COMPATIBLE
 class TransportTraits
