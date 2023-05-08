@@ -1349,7 +1349,8 @@ int HTTPClient::handleHeaderResponse()
             if((millis() - lastDataTime) > _tcpTimeout) {
                 return HTTPC_ERROR_READ_TIMEOUT;
             }
-            delay(10);
+            delay(2);
+            lv_task_handler(); //CBJ
         }
     }
 
